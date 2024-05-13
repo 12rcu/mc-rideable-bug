@@ -1,49 +1,15 @@
-# MonsteraTemplate
+# Minecraft Rideable/Input Ground Controller Bug
 
-## Licence Notice:
+In this repo you find the code to build a minecraft addon that shows that an entity with the component
 
-This project is released under the Apache 2.0 licence although the kotlin library Monstera is released under GPL-3.0,
-as mentioned there, such a project like this, where the library is just "used" to create a minecraft addon, we can put
-our own licence.
-
-## Getting Started
-
-You can search project wide for the keyword "todo" to see what you should change.
-
-### Std Lib:
-
-#### No access
-
-If you want to use the std lib, you can write us an e-mail or contact the maintainer on GitHub.
-
-If you don't have access to the std lib, disable it by removing the following line from the `build.gradle.kts`
-
-````gradle
-implementation("com.lotsofpixelsstudios:monstera-std-lib:<version>")
+````json
+{
+  "minecraft:input_ground_controlled": {}
+}
 ````
 
-Reload the gradle project and remove code that would throw an error.
+can't automatically jump up one block with the current format version.
+It was noticed that the bug didn't appear with the format version 1.19.0.
 
-#### With access
-
-If you have access go to you're gradle home directory (on Windows: `%HOMEPATH%\.gradle`) and add a file named
-`env-timoliacreative.local.gradle.kts` and add the following line:
-
-````gradle
-project.extra["gitlab_token"] = "<you're access token>"
-````
-
-With you're access token and reload the gradle project.
-
-## Scripting
-
-Note: You need to activate scripting in the world (edit the world in minecraft and check the holiday creator features
-within the experiments)
-
-To disable scripting:
-
-- remove the `npm.cmd run build` command from the config (Main.kt)
-- remove the `scriptEntryFile` from the config (Main.kt)
-- remove the `scriptingVersion` from the config (Main.kt)
-- remove the `scripts()` function call from the addon (Main.kt)
-- optionally you can remove the whole scripting directory on the root
+Some other strange behaviour that was found with the newer format version was that the exit position can be within 
+blocks which wasn't possible in with the older format version.
