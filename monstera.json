@@ -1,7 +1,7 @@
 {
-    "name": "Template Project",
-    "projectShort": "tp",
-    "description": "My template Project",
+    "name": "Rideable Bug",
+    "projectShort": "rb",
+    "description": "Bug Report",
     "namespace": "monstera",
     "version": [
         0,
@@ -12,13 +12,13 @@
         "Matthias Klenz"
     ],
     "world": "src/main/resources/world/template-world",
-    "worldUUID": "fe8b47f7-dfe9-4ad1-ac1f-18b8fda6bba6",
-    "worldModuleUUID": "8ac9af62-3bcd-4ebc-9600-a53ba72378fa",
-    "behUUID": "01ad7aa7-917a-45d4-8678-29dce3d36e05",
-    "behModuleUUID": "f60f5b8c-f5ff-4648-b069-e0554531b3df",
-    "scriptUUID": "a7966416-236e-4da7-a7e6-fe3f13ab8c79",
-    "resUUID": "c9a9728b-af73-4251-bcea-e4df4371f309",
-    "resModuleUUID": "41b5e80e-b651-46a7-a3c1-f3d829020ef0",
+    "worldUUID": "a148f3de-82d0-4cde-ae35-8c372fee6d14",
+    "worldModuleUUID": "e974e7b3-2669-4b98-8fb5-bea3e6edde88",
+    "behUUID": "e366f265-f3fe-4332-afa7-22f3d53f3e1c",
+    "behModuleUUID": "824e534a-1ce2-48c4-92ee-fb6206d980c1",
+    "scriptUUID": "307367fe-9d1b-4464-a389-41c06fc23395",
+    "resUUID": "5c729b6c-e8eb-4b21-b7a8-a29e63806361",
+    "resModuleUUID": "0ef65951-055b-41fa-9bd7-eff2d7cd4e27",
     "targetMcVersion": [
         1,
         20,
